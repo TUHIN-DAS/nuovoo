@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
   backdrop: {
-    zIndex: theme.zIndex.drawer + 1,
+    zIndex: theme.zIndex.drawer + 1000,
     color: '#fff',
   },
 }));
@@ -14,7 +14,6 @@ const useStyles = makeStyles(theme => ({
 const Spinner = () => {
   const classes = useStyles();
   const [showSpinner,setShowSpinner] = React.useState(false);
-  //const classes = useStyles();
   // subscribing to login service to get identify when to show forgot password modal
   SpinnerService.getLoader().subscribe((canShow) => { console.log(canShow); setShowSpinner(canShow.show)});
 

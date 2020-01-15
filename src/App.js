@@ -5,7 +5,7 @@ import Spinner from 'components/spinner/spinner';
 
 
 const AppContainer = () => (
- <body>
+    <body>
     <Header></Header>
     <Spinner></Spinner>
     </body>
